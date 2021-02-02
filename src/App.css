@@ -1,0 +1,789 @@
+/**
+##############################################################################################################
+##############################################################################################################
+                          Todo esto es el CSS para Main.js
+##############################################################################################################
+##############################################################################################################
+*/
+
+/*Version para tlf.... 578px*/
+*{
+  box-sizing: border-box !important;
+  font-family: 'Balsamiq Sans', cursive !important;
+}
+/*cabecera inicial*/
+label{
+  font-size: 5vw;
+}
+a{
+  font-size: 5vw;
+}
+ul{
+  font-size: 5vw;
+}
+h1{
+  font-size: 13vw;
+  font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.info-introduccion{
+  border-bottom: black 5px solid;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+.info-introduccion-pc{
+  display: none;
+}
+
+/*Informacion personal, experiencia etc*/
+.titulo{
+  display: inline-block;
+  font-size: 8vw;
+  margin-bottom: 30px;
+}
+/*Imagen flotante*/
+.flotante{
+  position: relative;
+  top: 20px;
+  margin:0px auto ;
+  height: 120px;
+  width: 120px;
+  right: 5%;
+  box-sizing: content-box;
+  background: url('./images/yo.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: rgb(55, 182, 255) rgb(214, 55, 27) rgb(15, 160, 34) rgb(161, 4, 252)  ;
+  border-width: 5px;
+}
+/*Aqui empieza la seccion Informacion personal*/
+#seccion1{
+  padding: 4%;    
+  border-left:solid 5px rgb(55, 182, 255);
+}
+#seccion1>.titulo{
+  color:rgb(55, 182, 255);
+}
+.seccion1-apartado{
+  display: flex;
+  flex-direction: column; 
+}
+
+.seccion1-apartado>a{
+  color: rgb(55, 182, 255);
+  text-decoration: none;
+}
+/*Para los svg*/
+svg{
+  margin-right: 5px;
+}
+/*Aqui empieza la seccion de experiencia*/
+#seccion2{
+  padding: 4%;   
+  border-left:solid 5px rgb(214, 55, 27);
+}
+#seccion2 .titulo{
+  color:rgb(214, 55, 27);
+}
+.seccion2-apartado a{
+  text-decoration: none;
+  color: rgb(214, 55, 27);
+}
+
+.localizacion>label{
+  font-size: 3vw;
+  height: fit-content;
+}
+.localizacion svg>path{
+  fill:grey
+}
+
+.experiencia-cabecera{
+  padding-bottom: 20px;
+  border-bottom: lightgray 2px solid;
+}
+
+.experiencia-cabecera > img{
+  position: relative;
+  width: 30%;
+  float: right;
+  top: 35px
+}
+
+.empresa{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.empresa > img{
+  width: 40%;
+}
+
+.empresa > label{
+  width: 60%;
+}
+
+.contenido-experiencia{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-experiencia label{
+  margin-bottom: 5%;
+}
+
+.contenido-experiencia > label.titulo{
+  color:grey !important;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 5vw;
+}
+/*Aqui empieza la seccion de habilidades*/
+#seccion3{
+  padding: 4%;    
+  border-left:solid 5px rgb(15, 160, 34);
+;
+}
+#seccion3 .titulo{
+  color:rgb(15, 160, 34);
+}
+
+.skill{
+  margin-top: 20px;
+}
+
+.skill-cabecera{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.skill-cabecera svg{
+  margin: auto 0px;
+}
+
+.skill-contenido{
+  display: flex;
+  flex-direction: column;
+  background-color: #d1d1d111;
+  border-left: 5px solid #c5c5c5af;
+}
+
+.skill-contenido label{
+  margin: 15px 50px
+}
+
+.skill-contenido .framework{
+  text-decoration: underline;
+  color: gray;
+  margin-bottom: 0px
+}
+/*Aqui empieza la se seccion de metodologia... este usa la seccion 2 para el contenido*/
+#seccion4{
+  padding: 4%;  
+  border-left:solid 5px rgb(161, 4, 252);
+}
+#seccion4 .titulo{
+  color:rgb(161, 4, 252);
+}
+
+.contacto{  
+  display: inline-block;
+  width: 100%;
+}
+.contacto svg{
+  margin:auto 0px;
+  margin-right: 10px;
+  fill: antiquewhite;
+}
+.contacto a{
+  text-decoration: none;
+  vertical-align: middle;
+  color: white;
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
+}
+
+.llamame{
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  background-color: rgba(255, 87, 58, 0.87);
+  border-bottom: 5px solid rgb(214, 55, 27);  
+}
+.contactame{
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  background-color: rgba(55, 182, 255, 0.767);
+  border-bottom: 5px solid rgb(55, 182, 255);  
+}
+.contacto path{
+  fill:#fff
+}
+.portafolio{
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  background-color: rgba(15, 160, 34, 0.795);
+  border-bottom: 5px solid rgb(15, 160, 34);  
+}
+
+.imprimir{
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  background-color: rgba(161, 4, 252, 0.603);
+  border-bottom: 5px solid rgb(161, 4, 252);  
+}
+.referencias{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.referencias > img{
+  width: 10%;
+  margin: 7px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  h1{
+    font-size: 8vw;
+    padding-right: 30%;
+  }
+  .flotante{
+    position: absolute;
+    top: 2%;
+  }
+  label{
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 3.5vw;
+  }
+  ul{
+    font-size: 3.5vw;
+  }
+  .titulo{
+    font-size: 8vw ;
+  }
+  .localizacion>label{
+    font-size: 2vw;
+  }
+  .referencias > img {
+    width: 5%;
+  }
+  .contenido-experiencia > label.titulo{
+    font-size: 3.5vw;
+  }
+  .seccion1-apartado{
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+  h1{
+    font-size: 7vw;
+    padding-right: 30%;
+  }
+  .info-introduccion label{
+    display: inline-block;
+    margin-right: 50%;
+  }
+  .flotante{
+    position: absolute;
+    top: 3%;
+  }
+  label{
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 3.5vw;
+  }
+  ul{
+    font-size: 3.5vw;
+  }
+  .titulo{
+    font-size: 7vw ;
+  }
+  .localizacion>label{
+    font-size: 3vw;
+  }
+  .referencias > img {
+    width: 5%;
+  }
+  .contenido-experiencia > label.titulo{
+    font-size: 3.5vw;
+  }
+  .seccion1-apartado{
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .seccion1-apartado>label{
+    display: inline-block;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  h1{
+    font-size: 6vw;
+    padding-right: 30%;
+  }
+  .info-introduccion label{
+    display: inline-block;
+  }
+  .flotante{
+    position: absolute;
+    top: 3%;
+  }
+  label{
+    font-size: 2vw;
+  }
+  a{
+    font-size: 2vw;
+  }
+  ul{
+    font-size: 2vw;
+  }
+  .titulo{
+    font-size: 5vw ;
+    width: 100%;
+  }
+  .localizacion>label{
+    font-size: 1.3vw;
+  }
+  .referencias > img {
+    width: 5%;
+  }
+  .contenido-experiencia > label.titulo{
+    font-size: 2vw;
+  }
+  .seccion1-apartado{
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .seccion1-apartado>label{
+    display: inline-block;
+    width: 100%;
+  }
+  .skill{
+    display: flex;
+  }
+  .skill-cabecera{
+    width: 50%;
+    padding-top: 3%;
+    align-items: flex-start;
+  }
+  .skill-cabecera svg{
+    margin: 5px;
+  }
+  .llamame{
+    width: 25%;
+  }
+  .contactame{
+    width: 25%;
+  }
+  .portafolio{
+    width: 25%;
+  }
+  
+  .imprimir{
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #seccion1{   
+    border-left-width:10px; 
+    padding: 150px 150px 50px 150px;
+  }
+  #seccion2{   
+    border-left-width:10px; 
+    padding: 150px 150px 50px 150px;
+  }
+  #seccion3{   
+    border-left-width:10px; 
+    padding: 150px 150px 50px 150px;
+  }
+  #seccion4{   
+    border-left-width:10px; 
+    padding: 150px 150px 50px 150px;
+  }
+  .contenedor{
+    width: 70%;
+    margin: 200px auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);;
+  }
+  h1{
+    font-size: 7vw;
+    line-height: 3rem;
+    margin-top: 20%;
+    margin-left: 17%;
+  }
+  .info-introduccion{
+    display: none;
+  }
+  .info-introduccion-pc{
+    background-color: turquoise;
+    height: 1000px;
+    display: inline-block;
+    width: 100%;
+    line-height: 5rem;
+  }
+  .info-introduccion-pc label{
+    display: inline-block;
+    margin-left: 30%;
+  }
+  .flotante{
+    display: none;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    right: 60px;
+    border-width: 15px;
+  }
+  label{
+    font-size: 1.5vw;
+  }
+  b{
+    margin-bottom: 10px;
+  }
+  .localizacion svg{
+    width: 0.6vw !important;
+    vertical-align: middle;
+  }
+  a{
+    font-size: 1.5vw;
+  }
+  ul{
+    font-size: 1.5vw;
+  }
+  .titulo{
+    font-size: 4vw ;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .localizacion>label{
+    font-size: 0.8vw;
+  }
+  .contenido-experiencia > label.titulo{
+    font-size: 1.5vw;
+  }
+  .seccion1-apartado{
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 3%;
+  }
+  .seccion1-apartado>label{
+    display: inline-block;
+    width: 100%;
+  }
+  .skill{
+    display: flex;
+  }
+  .skill-cabecera{
+    width: 35%;
+    height: fit-content;
+    padding-top: 3%;
+    margin-right: 15px;
+    align-items: flex-start;
+  }
+  .skill-cabecera svg{
+    margin: auto 0px;
+    margin-right: 10px;
+  }
+  .contacto{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 31px;
+    top: 220px;
+    width: 220px;
+  }
+  .referencias{
+    width: 100%;
+  }  
+  .referencias > img {
+    width: 15%;
+  }
+  .llamame{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contactame{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .portafolio{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .imprimir{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+/*
+##############################################################################################################
+##############################################################################################################
+                          Todo esto es el CSS para Portafolio.js
+##############################################################################################################
+##############################################################################################################
+*/
+
+p.MuiTypography-colorTextSecondary {
+  color: rgb(0, 0, 0);
+  font-size: 5vw;
+}
+
+.MuiAvatar-root{
+  width: 65px !important;
+  height: 65px !important;
+}
+
+div.MuiCollapse-wrapperInner div.MuiCardContent-root{
+  display: inline-block;
+  width: 100%;
+}
+
+div.MuiCollapse-wrapperInner div.MuiCardContent-root p{
+  display: inline-block;
+  width: fit-content;
+  background-color: rgba(194, 190, 190, 0.568);
+  padding: 2px;
+  font-size: 12px;
+}
+div.MuiCardHeader-content span{
+  font-size: 5vw;
+}
+.MuiPaper-root.MuiCard-root.jss1.MuiPaper-elevation1.MuiPaper-rounded{
+  display: inline-block ;
+  height: max-content ;
+  margin:10px ;
+  vertical-align: text-top ;
+  background-color: rgba(92, 240, 215, 0.199) ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.212) ;
+}
+
+.portafolio-contenedor{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 8%;
+}
+.portafolio-atras{
+  display: none;
+  position: fixed;
+  width: 10%;
+  height: 10%;
+  float: right;
+}
+
+div.portafolio-atras a{
+  color:rgb(0, 0, 0)
+}
+.portafolio-contenido{
+  display: inline-block;
+  text-align: center;
+}
+
+.portafolio-titulo{
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0px;
+  font-size: 8vw;
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .MuiPaper-root.MuiCard-root.jss1.MuiPaper-elevation1.MuiPaper-rounded{
+    max-width: 80%;
+  }
+  p.MuiTypography-colorTextSecondary {
+    font-size: 3.5vw;
+  }
+  div.MuiCardHeader-content span{
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .MuiAvatar-root{
+    width: 95px !important;
+    height: 95px !important;    
+    font-size: 3.25rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .MuiPaper-root.MuiCard-root.jss1.MuiPaper-elevation1.MuiPaper-rounded{
+    max-width: 40%;
+  }
+  p.MuiTypography-colorTextSecondary {
+    font-size: 2vw;
+    
+    min-height: 340px;
+  }
+  div.MuiCardHeader-content span{
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p.MuiTypography-colorTextSecondary {
+    font-size: 1.5vw;
+    min-height: 340px ;
+  }
+  .portafolio-atras{
+    display: inline-block;
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    top: 3%;
+    left: 2%;
+    border-radius: 60%;
+  }
+  .portafolio-atras svg{
+    width: 100%;
+    height: 100%;
+  }
+  .portafolio-contenido{
+    display: inline-block ;
+    width: 95% ;
+    margin-left: 5% ;
+    text-align: center ;
+  }
+  .portafolio-titulo{
+    font-size: 4vw;  
+  }
+  .MuiPaper-root.MuiCard-root.jss1.MuiPaper-elevation1.MuiPaper-rounded{
+    max-width: 436px;
+  }
+  div.MuiCardHeader-content span{
+    font-size: 1.5vw;
+  }
+  .MuiAvatar-root{
+    width: 65px !important;
+    height: 65px !important;    
+    font-size: 2.25rem !important;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      bottom: 0px;
+      opacity: 1;
+    }
+    
+    80% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 1;
+      bottom: -200px;
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 0 160px;
+      background-size: 170px 300px;
+    }
+    
+    100% {
+      background-position: 500px -18px;
+      background-size: 250px 150px;
+    }
+  }  
+  .loader {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 120px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+  }  
+  .loader span {
+    z-index: 3;
+  }  
+  .loader-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 60%;
+    bottom: 0;
+    background-color:rgb(92, 240, 215) ;
+    z-index: 2;
+    animation: wave 1s ease-out forwards;
+  }  
+  .drops {
+    -webkit-filter: url('#liquid');
+    filter: url('#liquid');
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-in .1s linear .4s forwards;
+  }  
+  .drop1 , .drop2 {
+    width: 21px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(92, 240, 215)
+  }  
+  .drop1 {
+    width: 70px;
+    height: 16px;
+    bottom: 8px;
+    border-radius: 0;
+  }  
+  .drop2 {
+    animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
+  }
+
+}
+
+
